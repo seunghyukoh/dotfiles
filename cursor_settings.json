@@ -1,0 +1,142 @@
+{
+  "workbench.colorTheme": "Monokai Pro (Filter Spectrum)",
+  "workbench.productIconTheme": "fluent-icons",
+  "workbench.iconTheme": "material-icon-theme",
+  "remote.SSH.connectTimeout": 60,
+  "remote.SSH.showLoginTerminal": true,
+  "workbench.startupEditor": "none",
+  "editor.fontFamily": "JetBrains Mono, Fira Mono, Menlo, Monaco, 'Courier New', monospace",
+  "editor.fontSize": 14,
+  "terminal.integrated.fontSize": 14,
+  "editor.fontLigatures": true,
+  "notebook.lineNumbers": "on",
+  "editor.formatOnSave": true,
+  "files.autoSave": "onFocusChange",
+  "black-formatter.importStrategy": "fromEnvironment",
+  "editor.defaultFormatter": "charliermarsh.ruff",
+  "notebook.formatOnSave.enabled": true,
+  "notebook.formatOnCellExecution": true,
+  "black-formatter.showNotifications": "onWarning",
+  "black-formatter.args": ["--line-length", "100"],
+  "python.sortImports.args": ["--profile", "black"],
+  "[python]": {
+    "editor.defaultFormatter": "ms-python.black-formatter",
+    "editor.codeActionsOnSave": {
+      "source.organizeImports": "explicit"
+    }
+  },
+  "[json]": {
+    "editor.tabSize": 2,
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "git.confirmSync": false,
+  "[jsonc]": {
+    "editor.defaultFormatter": "vscode.json-language-features"
+  },
+  "githubPullRequests.pushBranch": "always",
+  "files.associations": {
+    "*.py": "python",
+    ".cursorrules": "plaintext"
+  },
+  "jupyter.askForKernelRestart": false,
+  "notebook.cellToolbarLocation": {
+    "default": "right",
+    "jupyter-notebook": "left"
+  },
+  "terminal.integrated.inheritEnv": false,
+  "editor.accessibilitySupport": "off",
+  "explorer.confirmDragAndDrop": false,
+  "window.commandCenter": false,
+  "terminal.integrated.defaultProfile.linux": "zsh",
+  "notebook.editorOptionsCustomizations": {
+    "editor.tabSize": 4,
+    "editor.indentSize": 4,
+    "editor.insertSpaces": true
+  },
+  "material-icon-theme.folders.theme": "specific",
+  "editor.codeActionsOnSave": {
+    "source.organizeImports": "never"
+  },
+  "editor.formatOnPaste": true,
+  "github.copilot.editor.enableAutoCompletions": true,
+  "editor.linkedEditing": true,
+  "cSpell.userWords": [
+    "arxiv",
+    "charliermarsh",
+    "dont",
+    "dtype",
+    "Fira",
+    "Menlo",
+    "Monokai",
+    "safetensors",
+    "tailwindcss",
+    "vsicons"
+  ],
+  "githubPullRequests.createOnPublishBranch": "never",
+  "[yaml]": {
+    "editor.defaultFormatter": "redhat.vscode-yaml",
+    "diffEditor.ignoreTrimWhitespace": true
+  },
+  "editor.minimap.enabled": false,
+  "workbench.editorLargeFileConfirmation": 100,
+  "notebook.output.textLineLimit": 50,
+  "github.copilot.preferredAccount": "seunghyukoh",
+  "git.openRepositoryInParentFolders": "never",
+  "projectManager.git.baseFolders": ["~/Developer"],
+  "git.suggestSmartCommit": false,
+  "material-icon-theme.activeIconPack": "none",
+  "github.copilot.enable": {
+    "*": true,
+    "plaintext": false,
+    "markdown": false,
+    "scminput": false
+  },
+  "[html]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "notebook.insertFinalNewline": true,
+  "workbench.editor.closeOnFileDelete": true,
+  "javascript.updateImportsOnFileMove.enabled": "never",
+  "typescript.updateImportsOnFileMove.enabled": "never",
+  "diffEditor.hideUnchangedRegions.enabled": true,
+  "json.format.enable": false,
+  "database-client.autoSync": true,
+  "cursor.cpp.disabledLanguages": ["plaintext", "markdown", "scminput"],
+  "ruff.path": ["[\"/opt/homebrew/bin/ruff\"]"],
+  "git.autofetch": true,
+  "redhat.telemetry.enabled": false,
+  "vs-kubernetes": {
+    "vs-kubernetes.namespace": "",
+    "vs-kubernetes.kubectl-path": "",
+    "vs-kubernetes.helm-path": "",
+    "vs-kubernetes.minikube-path": "",
+    "vs-kubernetes.kubectlVersioning": "user-provided",
+    "vs-kubernetes.outputFormat": "yaml",
+    "vs-kubernetes.kubeconfig": "",
+    "vs-kubernetes.knownKubeconfigs": [],
+    "vs-kubernetes.autoCleanupOnDebugTerminate": false,
+    "vs-kubernetes.nodejs-autodetect-remote-root": true,
+    "vs-kubernetes.nodejs-remote-root": "",
+    "vs-kubernetes.nodejs-debug-port": 9229,
+    "vs-kubernetes.dotnet-vsdbg-path": "~/vsdbg/vsdbg",
+    "vs-kubernetes.local-tunnel-debug-provider": "",
+    "checkForMinikubeUpgrade": true,
+    "imageBuildTool": "Docker",
+    "vs-kubernetes.ignore-recommendations": true
+  },
+  "vscode-kubernetes.log-viewer.follow": true,
+  "vscode-kubernetes.log-viewer.timestamp": true,
+  "vscode-kubernetes.log-viewer.since": -1,
+  "vscode-kubernetes.log-viewer.tail": 50,
+  "vscode-kubernetes.log-viewer.destination": "Webview",
+  "vscode-kubernetes.log-viewer.wrap": false,
+  "docker.extension.enableComposeLanguageServer": false,
+  "remote.SSH.remotePlatform": {
+    "slurm": "linux",
+    "runpod": "linux",
+    "runpod-sftp": "linux",
+    "office": "linux"
+  },
+  "aws.telemetry": false
+}
