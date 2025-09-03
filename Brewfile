@@ -33,8 +33,6 @@ brew "zsh"
 cask "1password-cli"
 # Application launcher and productivity software
 cask "alfred"
-# Distribution of the Python and R programming languages for scientific computing
-cask "anaconda"
 # Application uninstaller
 cask "appcleaner"
 # Write, edit, and chat about your code with AI
@@ -51,6 +49,8 @@ cask "heynote"
 cask "iterm2"
 # Keyboard customiser
 cask "karabiner-elements"
+# Minimal installer for conda
+cask "miniconda"
 # PDF reader and note-taking application
 cask "skim"
 # Open-source code editor
