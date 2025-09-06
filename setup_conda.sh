@@ -4,5 +4,5 @@ set -e
 
 brew install miniconda
 
-~/miniconda3/bin/conda init bash
-~/miniconda3/bin/conda init zsh
+/opt/homebrew/bin/conda init bash
+/opt/homebrew/bin/conda init zsh
