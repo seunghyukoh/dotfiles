@@ -55,6 +55,8 @@ cask "iterm2"
 cask "karabiner-elements"
 # Minimal installer for conda
 cask "miniconda"
+# Knowledge base that works on top of a local folder of plain text Markdown files
+cask "obsidian"
 # PDF reader and note-taking application
 cask "skim"
 # Open-source code editor
