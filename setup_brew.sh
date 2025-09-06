@@ -1,5 +1,7 @@
 #!/bin/bash
 
+set -e
+
 echo "Checking Homebrew installation..."
 if ! command -v brew &> /dev/null
 then

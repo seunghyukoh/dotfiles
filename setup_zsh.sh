@@ -1,5 +1,7 @@
 #!/bin/bash
 
+set -e
+
 # .zshrc에 플러그인을 추가하는 함수 정의
 add_plugin_to_zshrc() {
     local plugin="$1"
