@@ -106,4 +106,7 @@ fi
 # Add plugin using function
 add_plugin_to_zshrc "zsh-syntax-highlighting"
 
+# Add autojump plugin
+add_plugin_to_zshrc "autojump"
+
 echo "Setup complete! Run 'source ~/.zshrc' to apply changes."
