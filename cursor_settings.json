@@ -103,7 +103,6 @@
   "json.format.enable": false,
   "database-client.autoSync": true,
   "cursor.cpp.disabledLanguages": ["plaintext", "markdown", "scminput"],
-  "ruff.path": ["[\"/opt/homebrew/bin/ruff\"]"],
   "git.autofetch": true,
   "redhat.telemetry.enabled": false,
   "vs-kubernetes": {
@@ -135,8 +134,9 @@
   "remote.SSH.remotePlatform": {
     "slurm": "linux",
     "runpod": "linux",
-    "runpod-sftp": "linux",
     "office": "linux"
   },
-  "aws.telemetry": false
+  "aws.telemetry": false,
+  "python.analysis.typeCheckingMode": "standard",
+  "github.copilot.nextEditSuggestions.enabled": true
 }
