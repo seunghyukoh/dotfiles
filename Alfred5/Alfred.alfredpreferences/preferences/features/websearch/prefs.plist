@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>customSites</key>
+	<dict>
+		<key>03FEB090-BB29-492B-A68B-5E5D14119034</key>
+		<dict>
+			<key>enabled</key>
+			<true/>
+			<key>keyword</key>
+			<string>nd</string>
+			<key>text</key>
+			<string>Naver Dictionary</string>
+			<key>url</key>
+			<string>https://dict.naver.com/search.dict?dicQuery={query}&amp;query={query}&amp;target=dic&amp;ie=utf8&amp;query_utf=&amp;isOnlyViewEE=</string>
+		</dict>
+		<key>574537BD-4679-4DAC-8FA7-993CB6C8E406</key>
+		<dict>
+			<key>enabled</key>
+			<true/>
+			<key>keyword</key>
+			<string>gs</string>
+			<key>text</key>
+			<string>Google Scholar</string>
+			<key>url</key>
+			<string>https://scholar.google.com/scholar?hl=en&amp;as_sdt=0%2C5&amp;q={query}&amp;btnG=</string>
+		</dict>
+		<key>5ECC15E0-14F6-49CA-A551-CF7676DCC871</key>
+		<dict>
+			<key>enabled</key>
+			<true/>
+			<key>keyword</key>
+			<string>dpw</string>
+			<key>text</key>
+			<string>Deepl Write</string>
+			<key>url</key>
+			<string>https://www.deepl.com/write#en/{query}</string>
+		</dict>
+		<key>8BFFCE1D-7AC1-4E18-9648-60A0643DACDE</key>
+		<dict>
+			<key>enabled</key>
+			<true/>
+			<key>keyword</key>
+			<string>git</string>
+			<key>text</key>
+			<string>GitHub</string>
+			<key>url</key>
+			<string>https://github.com/search?q={query}&amp;ref=opensearch</string>
+		</dict>
+		<key>989615F4-5EF9-4675-97CD-09A2D5A328F9</key>
+		<dict>
+			<key>enabled</key>
+			<true/>
+			<key>keyword</key>
+			<string>nm</string>
+			<key>text</key>
+			<string>네이버 지도</string>
+			<key>url</key>
+			<string>https://map.naver.com/v5/search/{query}</string>
+		</dict>
+		<key>A4F7C210-AE32-468E-93E0-6ED2BEE0AA28</key>
+		<dict>
+			<key>enabled</key>
+			<true/>
+			<key>keyword</key>
+			<string>dpl</string>
+			<key>text</key>
+			<string>Deepl</string>
+			<key>url</key>
+			<string>https://www.deepl.com/translator#ko/en/{query}</string>
+		</dict>
+	</dict>
+	<key>onlyShowEnabledInPrefs</key>
+	<true/>
+</dict>
+</plist>
