@@ -83,9 +83,9 @@
   },
   "Open Toolbelt" : false,
   "Keyboard Map" : {
-    "0xf728-0x80000" : {
-      "Action" : 10,
-      "Text" : "d"
+    "0x7f-0x80000" : {
+      "Action" : 11,
+      "Text" : "0x1b 0x7f"
     },
     "0xf702-0x280000" : {
       "Action" : 10,
@@ -95,9 +95,9 @@
       "Action" : 11,
       "Text" : "0x1"
     },
-    "0xf703-0x280000" : {
+    "0xf728-0x80000" : {
       "Action" : 10,
-      "Text" : "f"
+      "Text" : "d"
     },
     "0x7f-0x100000" : {
       "Action" : 11,
@@ -107,13 +107,13 @@
       "Action" : 11,
       "Text" : "0x5"
     },
-    "0x7f-0x80000" : {
-      "Action" : 11,
-      "Text" : "0x1b 0x7f"
-    },
     "0xf728-0x0" : {
       "Action" : 11,
       "Text" : "0x4"
+    },
+    "0xf703-0x280000" : {
+      "Action" : 10,
+      "Text" : "f"
     }
   },
   "Ansi 3 Color (Dark)" : {
@@ -166,7 +166,7 @@
   },
   "Silence Bell" : true,
   "Rows" : 30,
-  "Draw Powerline Glyphs" : false,
+  "Draw Powerline Glyphs" : true,
   "Guid" : "69EC981D-A640-472E-A1D7-27874B038C66",
   "Ansi 14 Color (Dark)" : {
     "Red Component" : 0.37597531080245972,
@@ -289,6 +289,7 @@
     "Alpha Component" : 1,
     "Green Component" : 0.4927266538143158
   },
+  "Minimum Contrast" : 0,
   "Cursor Guide Color (Light)" : {
     "Red Component" : 0.52338262643729649,
     "Color Space" : "sRGB",
@@ -514,8 +515,7 @@
     "Blue Component" : "0.02352941",
     "Red Component" : "0.3058824"
   },
-  "Normal Font" : "JetBrainsMono-Regular 12",
-  "Unlimited Scrollback" : true,
+  "Normal Font" : "MesloLGS-NF-Regular 13",
   "Ansi 12 Color (Light)" : {
     "Red Component" : 0.65349078178405762,
     "Color Space" : "sRGB",
@@ -523,6 +523,7 @@
     "Alpha Component" : 1,
     "Green Component" : 0.67044717073440552
   },
+  "Unlimited Scrollback" : true,
   "Ansi 10 Color (Dark)" : {
     "Red Component" : 0.3450070321559906,
     "Color Space" : "sRGB",
@@ -558,12 +559,12 @@
     "Alpha Component" : 1,
     "Green Component" : 0.97999999999999998
   },
-  "Terminal Type" : "xterm-256color",
   "Ansi 13 Color" : {
     "Green Component" : "0.4980392",
     "Blue Component" : "0.6588235",
     "Red Component" : "0.6784314"
   },
+  "Terminal Type" : "xterm-256color",
   "Ansi 5 Color (Light)" : {
     "Red Component" : 0.752197265625,
     "Color Space" : "sRGB",
