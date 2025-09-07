@@ -110,7 +110,14 @@ add_plugin_to_zshrc "zsh-syntax-highlighting"
 add_plugin_to_zshrc "autojump"
 
 # Install Powerlevel10k
-git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ~/powerlevel10k
-echo 'source ~/powerlevel10k/powerlevel10k.zsh-theme' >>~/.zshrc
+if [ ! -d "$HOME/powerlevel10k" ]; then
+    git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ~/powerlevel10k
+    echo 'source ~/powerlevel10k/powerlevel10k.zsh-theme' >>~/.zshrc
+else
+    echo "Powerlevel10k is already installed."
+fi
+
+rm -rf $HOME/.p10k.zsh
+ln -sv "$PWD/.p10k.zsh" "$HOME/.p10k.zsh"
 
 echo "Setup complete! Run 'source ~/.zshrc' to apply changes."
