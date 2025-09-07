@@ -120,4 +120,10 @@ fi
 rm -rf $HOME/.p10k.zsh
 ln -sv "$PWD/.p10k.zsh" "$HOME/.p10k.zsh"
 
+# Add p10k configuration to .zshrc
+echo "" >> ~/.zshrc
+echo "# To customize prompt, run \`p10k configure\` or edit ~/.p10k.zsh." >> ~/.zshrc
+echo "[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh" >> ~/.zshrc
+
+
 echo "Setup complete! Run 'source ~/.zshrc' to apply changes."
