@@ -139,5 +139,6 @@
   "aws.telemetry": false,
   "python.analysis.typeCheckingMode": "standard",
   "github.copilot.nextEditSuggestions.enabled": true,
-  "cursorpyright.analysis.typeCheckingMode": "standard"
+  "cursorpyright.analysis.typeCheckingMode": "standard",
+  "terminal.integrated.fontFamily": "MesloLGLDZ Nerd Font Mono"
 }

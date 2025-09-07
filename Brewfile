@@ -1,6 +1,8 @@
 tap "runpod/runpodctl"
 # Shell extension to jump to frequently used directories
 brew "autojump"
+# Automatically restart SSH sessions and tunnels
+brew "autossh"
 # Python code formatter
 brew "black"
 # GitHub command-line tool
@@ -47,6 +49,7 @@ cask "cyberduck"
 cask "docker-desktop"
 # Flip clock screensaver
 cask "fliqlo"
+cask "font-meslo-lg-nerd-font"
 # Dedicated scratchpad for developers
 cask "heynote"
 # Terminal emulator as alternative to Apple's Terminal app
