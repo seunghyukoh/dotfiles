@@ -1,10 +1,15 @@
 tap "runpod/runpodctl"
+tap "tsung-ju/iguanatexmac"
 # Shell extension to jump to frequently used directories
 brew "autojump"
 # Automatically restart SSH sessions and tunnels
 brew "autossh"
 # Python code formatter
 brew "black"
+# OpenAI's coding agent that runs in your terminal
+brew "codex"
+# Get, unpack, build, and install modules from CPAN
+brew "cpanminus"
 # GitHub command-line tool
 brew "gh"
 # Distributed revision control system
@@ -21,6 +26,8 @@ brew "kubernetes-cli"
 brew "neovim"
 # Manage multiple Node.js versions
 brew "nvm"
+# Shell command parallelization utility
+brew "parallel"
 # Package compiler and linker metadata toolkit
 brew "pkgconf"
 # Open source continuous file synchronization application
@@ -52,12 +59,12 @@ cask "fliqlo"
 cask "font-meslo-lg-nerd-font"
 # Dedicated scratchpad for developers
 cask "heynote"
+cask "iguanatexmac"
 # Terminal emulator as alternative to Apple's Terminal app
 cask "iterm2"
-# Menu bar manager
-cask "jordanbaird-ice"
 # Keyboard customiser
 cask "karabiner-elements"
+cask "latexit-metadata"
 # Minimal installer for conda
 cask "miniconda"
 # Knowledge base that works on top of a local folder of plain text Markdown files
@@ -120,6 +127,7 @@ vscode "ms-vscode-remote.remote-containers"
 vscode "ms-vscode-remote.remote-ssh"
 vscode "ms-vscode-remote.remote-ssh-edit"
 vscode "ms-vscode-remote.vscode-remote-extensionpack"
+vscode "ms-vscode.cpptools"
 vscode "ms-vscode.live-server"
 vscode "ms-vscode.remote-explorer"
 vscode "ms-vscode.remote-server"
