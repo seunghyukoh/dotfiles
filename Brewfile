@@ -62,6 +62,8 @@ cask "heynote"
 cask "iguanatexmac"
 # Terminal emulator as alternative to Apple's Terminal app
 cask "iterm2"
+# Menu bar manager
+cask "jordanbaird-ice"
 # Keyboard customiser
 cask "karabiner-elements"
 cask "latexit-metadata"
