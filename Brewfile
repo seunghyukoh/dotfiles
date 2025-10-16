@@ -10,6 +10,8 @@ brew "black"
 brew "codex"
 # Get, unpack, build, and install modules from CPAN
 brew "cpanminus"
+# Command-line fuzzy finder written in Go
+brew "fzf"
 # GitHub command-line tool
 brew "gh"
 # Distributed revision control system
@@ -40,8 +42,6 @@ brew "uv"
 brew "watch"
 # UNIX shell (command interpreter)
 brew "zsh"
-# Password manager that keeps all passwords secure behind one password
-cask "1password"
 # Command-line interface for 1Password
 cask "1password-cli"
 # Application launcher and productivity software
@@ -62,8 +62,6 @@ cask "heynote"
 cask "iguanatexmac"
 # Terminal emulator as alternative to Apple's Terminal app
 cask "iterm2"
-# Menu bar manager
-cask "jordanbaird-ice"
 # Keyboard customiser
 cask "karabiner-elements"
 cask "latexit-metadata"
@@ -113,6 +111,7 @@ vscode "mikestead.dotenv"
 vscode "mikoz.black-py"
 vscode "monokai.theme-monokai-pro-vscode"
 vscode "ms-azuretools.vscode-containers"
+vscode "ms-kubernetes-tools.vscode-kubernetes-tools"
 vscode "ms-python.black-formatter"
 vscode "ms-python.debugpy"
 vscode "ms-python.isort"
@@ -142,6 +141,7 @@ vscode "openai.chatgpt"
 vscode "pkief.material-icon-theme"
 vscode "pkief.material-product-icons"
 vscode "rangav.vscode-thunder-client"
+vscode "redhat.vscode-yaml"
 vscode "rvest.vs-code-prettier-eslint"
 vscode "shakram02.bash-beautify"
 vscode "solitechnologyllc.sync-code-cloud"
