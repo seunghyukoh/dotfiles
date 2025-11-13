@@ -13,7 +13,7 @@
   "editor.formatOnSave": true,
   "files.autoSave": "onFocusChange",
   "black-formatter.importStrategy": "fromEnvironment",
-  "editor.defaultFormatter": "charliermarsh.ruff",
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
   "notebook.formatOnSave.enabled": true,
   "notebook.formatOnCellExecution": true,
   "black-formatter.showNotifications": "onWarning",
@@ -26,20 +26,17 @@
     }
   },
   "[json]": {
-    "editor.tabSize": 2,
-    "editor.formatOnSave": true,
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "git.confirmSync": false,
   "[jsonc]": {
-    "editor.defaultFormatter": "vscode.json-language-features"
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "githubPullRequests.pushBranch": "always",
   "files.associations": {
     "*.py": "python",
     ".cursorrules": "plaintext"
   },
-  "jupyter.askForKernelRestart": false,
   "notebook.cellToolbarLocation": {
     "default": "right",
     "jupyter-notebook": "left"
@@ -48,13 +45,12 @@
   "editor.accessibilitySupport": "off",
   "explorer.confirmDragAndDrop": false,
   "window.commandCenter": false,
-  "terminal.integrated.defaultProfile.linux": "zsh",
+  "terminal.integrated.defaultProfile.linux": "bash",
   "notebook.editorOptionsCustomizations": {
     "editor.tabSize": 4,
     "editor.indentSize": 4,
     "editor.insertSpaces": true
   },
-  "material-icon-theme.folders.theme": "specific",
   "editor.codeActionsOnSave": {
     "source.organizeImports": "never"
   },
@@ -75,17 +71,15 @@
   ],
   "githubPullRequests.createOnPublishBranch": "never",
   "[yaml]": {
-    "editor.defaultFormatter": "redhat.vscode-yaml",
-    "diffEditor.ignoreTrimWhitespace": true
+    "diffEditor.ignoreTrimWhitespace": false
   },
   "editor.minimap.enabled": false,
   "workbench.editorLargeFileConfirmation": 100,
-  "notebook.output.textLineLimit": 50,
+  "notebook.output.textLineLimit": 100,
   "github.copilot.preferredAccount": "seunghyukoh",
   "git.openRepositoryInParentFolders": "never",
   "projectManager.git.baseFolders": ["~/Developer"],
   "git.suggestSmartCommit": false,
-  "material-icon-theme.activeIconPack": "none",
   "github.copilot.enable": {
     "*": true,
     "plaintext": false,
@@ -103,6 +97,7 @@
   "json.format.enable": false,
   "database-client.autoSync": true,
   "cursor.cpp.disabledLanguages": ["plaintext", "markdown", "scminput"],
+  "ruff.path": ["[\"/opt/homebrew/bin/ruff\"]"],
   "git.autofetch": true,
   "redhat.telemetry.enabled": false,
   "vs-kubernetes": {
@@ -134,11 +129,39 @@
   "remote.SSH.remotePlatform": {
     "slurm": "linux",
     "runpod": "linux",
-    "office": "linux"
+    "runpod-sftp": "linux"
   },
-  "aws.telemetry": false,
-  "python.analysis.typeCheckingMode": "standard",
   "github.copilot.nextEditSuggestions.enabled": true,
-  "cursorpyright.analysis.typeCheckingMode": "standard",
-  "terminal.integrated.fontFamily": "MesloLGLDZ Nerd Font Mono"
+  "window.newWindowProfile": "Default",
+  "github.copilot.selectedCompletionModel": "",
+  "terminal.integrated.fontFamily": "MesloLGS Nerd Font Mono",
+  "workbench.editorAssociations": {
+    "*.copilotmd": "vscode.markdown.preview.editor"
+  },
+  "dataWrangler.enabledFileTypes": {
+    "csv": false,
+    "tsv": false
+  },
+  "search.useGlobalIgnoreFiles": true,
+  "extensions.ignoreRecommendations": true,
+  "diffEditor.ignoreTrimWhitespace": false,
+  "python.analysis.diagnosticSeverityOverrides": {
+    "reportPrivateImportUsage": "information"
+  },
+  "python.analysis.exclude": ["wandb", ".venv", "conda"],
+  "python.defaultInterpreterPath": "/opt/homebrew/Caskroom/miniconda/base",
+  "python.analysis.include": ["${workspaceFolder:<workspaceName>}"],
+  "editor.codeActions.triggerOnFocusChange": true,
+  "python.languageServer": "None",
+  "jupyter.debugJustMyCode": false,
+  "terminal.integrated.defaultProfile.osx": "zsh",
+  "python.analysis.typeEvaluation.strictParameterNoneValue": false,
+  "[shellscript]": {
+    "editor.defaultFormatter": "shakram02.bash-beautify"
+  },
+  "chat.instructionsFilesLocations": {
+    ".github/instructions": true,
+    "/Users/seunghyukoh/.aitk/instructions/": true
+  },
+  "sync.gist": "6fed643793d99f3b256feba12325a688"
 }
