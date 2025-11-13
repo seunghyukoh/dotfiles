@@ -1,0 +1,8 @@
+{
+  "alfredsnippet" : {
+    "snippet" : "pip cache purge",
+    "uid" : "9A8E461E-061A-49C1-A14C-508543C48308",
+    "name" : "Pip Clean",
+    "keyword" : "pipclean"
+  }
+}

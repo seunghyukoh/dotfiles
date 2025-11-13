@@ -1,0 +1,8 @@
+{
+  "alfredsnippet" : {
+    "snippet" : "git clone https:\/\/github.com\/EleutherAI\/lm-evaluation-harness.git",
+    "uid" : "8420A7CC-4AA5-4FFA-A61B-F02E3E916174",
+    "name" : "Clone LM Evaluation Harness",
+    "keyword" : "clonelmevaluationharness"
+  }
+}

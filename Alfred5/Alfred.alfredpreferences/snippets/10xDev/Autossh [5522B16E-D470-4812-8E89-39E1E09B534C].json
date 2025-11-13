@@ -1,0 +1,8 @@
+{
+  "alfredsnippet" : {
+    "snippet" : "autossh -M 0 -t -o ServerAliveInterval=30 -o",
+    "uid" : "5522B16E-D470-4812-8E89-39E1E09B534C",
+    "name" : "Autossh",
+    "keyword" : "autossh"
+  }
+}

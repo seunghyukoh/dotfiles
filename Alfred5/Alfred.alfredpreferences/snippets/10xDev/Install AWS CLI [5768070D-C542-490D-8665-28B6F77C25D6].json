@@ -1,0 +1,8 @@
+{
+  "alfredsnippet" : {
+    "snippet" : "curl \"https:\/\/awscli.amazonaws.com\/awscli-exe-linux-x86_64.zip\" -o \"awscliv2.zip\"\nunzip awscliv2.zip\nsudo .\/aws\/install",
+    "uid" : "5768070D-C542-490D-8665-28B6F77C25D6",
+    "name" : "Install AWS CLI",
+    "keyword" : "installawscli"
+  }
+}

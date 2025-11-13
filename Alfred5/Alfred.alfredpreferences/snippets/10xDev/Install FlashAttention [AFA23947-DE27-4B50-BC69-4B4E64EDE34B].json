@@ -1,0 +1,8 @@
+{
+  "alfredsnippet" : {
+    "snippet" : "pip install --no-build-isolation flash-attn",
+    "uid" : "AFA23947-DE27-4B50-BC69-4B4E64EDE34B",
+    "name" : "Install FlashAttention",
+    "keyword" : "installflashattn"
+  }
+}

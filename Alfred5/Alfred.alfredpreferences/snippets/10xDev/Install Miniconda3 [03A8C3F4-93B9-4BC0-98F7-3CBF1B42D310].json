@@ -1,0 +1,8 @@
+{
+  "alfredsnippet" : {
+    "snippet" : "mkdir -p ~\/miniconda3\nwget https:\/\/repo.anaconda.com\/miniconda\/Miniconda3-latest-Linux-x86_64.sh -O ~\/miniconda3\/miniconda.sh\nbash ~\/miniconda3\/miniconda.sh -b -u -p ~\/miniconda3\nrm ~\/miniconda3\/miniconda.sh",
+    "uid" : "03A8C3F4-93B9-4BC0-98F7-3CBF1B42D310",
+    "name" : "Install Miniconda3",
+    "keyword" : "installminiconda3"
+  }
+}

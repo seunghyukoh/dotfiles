@@ -1,0 +1,8 @@
+{
+  "alfredsnippet" : {
+    "snippet" : "brew doctor && brew update && brew upgrade",
+    "uid" : "61C6CE80-E614-4F48-AFED-F5F0F5556335",
+    "name" : "Brew Update and Upgrade",
+    "keyword" : "brewupdateupgrade"
+  }
+}

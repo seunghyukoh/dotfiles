@@ -1,0 +1,8 @@
+{
+  "alfredsnippet" : {
+    "snippet" : "conda clean --all",
+    "uid" : "276D90CF-7205-45EE-A545-4681EE07514F",
+    "name" : "Conda Clean",
+    "keyword" : "condaclean"
+  }
+}

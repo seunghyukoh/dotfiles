@@ -1,0 +1,8 @@
+{
+  "alfredsnippet" : {
+    "snippet" : "{\n  \"name\": \"SFTP\",\n  \"protocol\": \"sftp\",\n  \"uploadOnSave\": true,\n  \"useTempFile\": false,\n  \"openSsh\": true,\n  \"ignoreFile\": \".gitignore\",\n  \"ignore\": [\".vscode\", \".git\", \".DS_Store\"],\n  \"agent\": \"\/Users\/seunghyukoh\/.1password\/agent.sock\",\n  \"defaultProfile\": \"debug\",\n  \"profiles\": {\n    \"debug\": {\n      \"host\": \"office\",\n      \"protocol\": \"sftp\",\n      \"remotePath\": \"\/home\/seunghyukoh\/projects\/<project_name>\/<workspace_name>\/debug\"\n    }\n  }\n}\n",
+    "uid" : "75A96CEF-AFAD-4D2A-B80A-8A576BF33553",
+    "name" : "SFTP",
+    "keyword" : "sftp"
+  }
+}
