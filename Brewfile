@@ -48,8 +48,6 @@ cask "1password-cli"
 cask "alfred"
 # Application uninstaller
 cask "appcleaner"
-# Write, edit, and chat about your code with AI
-cask "cursor"
 # Server and cloud storage browser
 cask "cyberduck"
 # App to build and share containerised applications and microservices
@@ -65,8 +63,6 @@ cask "iterm2"
 # Keyboard customiser
 cask "karabiner-elements"
 cask "latexit-metadata"
-# Minimal installer for conda
-cask "miniconda"
 # Knowledge base that works on top of a local folder of plain text Markdown files
 cask "obsidian"
 # PDF reader and note-taking application
