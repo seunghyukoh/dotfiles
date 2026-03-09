@@ -118,7 +118,7 @@ if command -v zoxide >/dev/null 2>&1; then
         echo "zoxide is already configured in .zshrc."
     fi
 else
-    echo "zoxide is not installed. Run 'brew install zoxide' first."
+    echo "zoxide is not installed. Please install zoxide first."
 fi
 
 echo "Setting up fzf..."
@@ -133,7 +133,7 @@ if command -v fzf >/dev/null 2>&1; then
         echo "fzf is already configured in .zshrc."
     fi
 else
-    echo "fzf is not installed. Run 'brew install fzf' first."
+    echo "fzf is not installed. Please install fzf first."
 fi
 
 echo "Setup complete! Run 'source ~/.zshrc' to apply changes."

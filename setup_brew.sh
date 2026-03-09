@@ -25,11 +25,10 @@ echo "Generating Brewfile from packages.sh..."
 
     # CLI packages
     for pkg in "${CLI_PACKAGES[@]}"; do
-        name=$(get_brew_name "$pkg")
-        if [ "$name" = "syncthing" ]; then
-            echo "brew \"$name\", $BREW_SYNCTHING_OPTS"
+        if [ "$pkg" = "syncthing" ]; then
+            echo "brew \"$pkg\", $BREW_SYNCTHING_OPTS"
         else
-            echo "brew \"$name\""
+            echo "brew \"$pkg\""
         fi
     done
 

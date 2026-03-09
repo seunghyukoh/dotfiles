@@ -1,34 +1,33 @@
 #!/bin/bash
 
-# 패키지 목록 단일 관리 파일
-# 모든 설치 스크립트가 이 파일을 source하여 사용
+# macOS Homebrew 패키지 목록 단일 관리 파일
+# setup_brew.sh가 이 파일을 source하여 Brewfile을 생성
 
-# --- Homebrew taps (macOS만 해당) ---
+# --- Homebrew taps ---
 BREW_TAPS=(
     "runpod/runpodctl"
     "tsung-ju/iguanatexmac"
 )
 
 # --- CLI 도구 ---
-# "brew_name:apt_name" 형식 (이름이 같으면 하나만 기입)
 CLI_PACKAGES=(
     "autossh"
     "bat"
-    "cpanminus:cpanminus"
+    "cpanminus"
     "eza"
-    "fd:fd-find"
+    "fd"
     "fzf"
     "gh"
     "git-delta"
     "git"
     "git-lfs"
     "helm"
-    "kubernetes-cli:kubectl"
+    "kubernetes-cli"
     "lazygit"
     "neovim"
     "nvm"
     "parallel"
-    "pkgconf:pkg-config"
+    "pkgconf"
     "ripgrep"
     "syncthing"
     "tmux"
@@ -38,7 +37,7 @@ CLI_PACKAGES=(
     "zsh"
 )
 
-# syncthing 옵션 (macOS에서 restart_service 사용)
+# syncthing 옵션 (restart_service 사용)
 BREW_SYNCTHING_OPTS="restart_service: :changed"
 
 # --- macOS GUI 앱 (cask) ---
@@ -140,19 +139,3 @@ VSCODE_EXTENSIONS=(
     "wholroyd.jinja"
     "zainchen.json"
 )
-
-# --- 헬퍼 함수 ---
-
-# brew_name:apt_name 에서 brew 이름 추출
-get_brew_name() {
-    echo "${1%%:*}"
-}
-
-# brew_name:apt_name 에서 apt 이름 추출 (없으면 brew 이름 반환)
-get_apt_name() {
-    if [[ "$1" == *:* ]]; then
-        echo "${1#*:}"
-    else
-        echo "$1"
-    fi
-}

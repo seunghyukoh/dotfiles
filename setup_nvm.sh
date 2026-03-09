@@ -2,21 +2,9 @@
 
 set -e
 
-OS="$(uname -s)"
-
-# nvm 설치
-if ! command -v nvm >/dev/null 2>&1 && [ ! -d "$HOME/.nvm" ]; then
-    if [ "$OS" = "Darwin" ]; then
-        if ! brew list nvm &>/dev/null; then
-            echo "Installing nvm via Homebrew..."
-            brew install nvm
-        else
-            echo "nvm is already installed via Homebrew."
-        fi
-    else
-        echo "Installing nvm via install script..."
-        curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.1/install.sh | bash
-    fi
+if ! brew list nvm &>/dev/null; then
+    echo "Installing nvm..."
+    brew install nvm
 else
     echo "nvm is already installed."
 fi
@@ -34,18 +22,12 @@ else
     NVM_PROFILE="$HOME/.profile"
 fi
 
-# NVM 로딩 스크립트 (macOS와 Linux 모두 지원)
 if ! grep -q 'export NVM_DIR="\$HOME/.nvm"' "$NVM_PROFILE"; then
     {
         echo ''
         echo 'export NVM_DIR="$HOME/.nvm"'
-        if [ "$OS" = "Darwin" ]; then
-            echo '[ -s "/opt/homebrew/opt/nvm/nvm.sh" ] && \. "/opt/homebrew/opt/nvm/nvm.sh"'
-            echo '[ -s "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm" ] && \. "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm"'
-        else
-            echo '[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"'
-            echo '[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"'
-        fi
+        echo '[ -s "/opt/homebrew/opt/nvm/nvm.sh" ] && \. "/opt/homebrew/opt/nvm/nvm.sh"'
+        echo '[ -s "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm" ] && \. "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm"'
     } >> "$NVM_PROFILE"
     echo "NVM settings have been added to $NVM_PROFILE."
 else
@@ -54,11 +36,7 @@ fi
 
 # 현재 셸 세션에 적용
 export NVM_DIR="$HOME/.nvm"
-if [ "$OS" = "Darwin" ]; then
-    [ -s "/opt/homebrew/opt/nvm/nvm.sh" ] && \. "/opt/homebrew/opt/nvm/nvm.sh"
-else
-    [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
-fi
+[ -s "/opt/homebrew/opt/nvm/nvm.sh" ] && \. "/opt/homebrew/opt/nvm/nvm.sh"
 
 nvm install 22
 nvm alias default 22

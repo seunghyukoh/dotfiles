@@ -1,25 +1,26 @@
 #!/bin/bash
 
+# macOS 전용 설치 스크립트
+# Linux는 .devcontainer/를 사용
+
 set -e
 
 DOTFILES_DIR="$(cd "$(dirname "$0")" && pwd)"
-OS="$(uname -s)"
 
-echo "========================================="
-echo " Dotfiles Installation ($OS)"
-echo "========================================="
-
-# 1. 패키지 설치
-echo ""
-echo "[1/4] Packages..."
-if [ "$OS" = "Darwin" ]; then
-    bash "$DOTFILES_DIR/setup_brew.sh"
-elif [ "$OS" = "Linux" ]; then
-    bash "$DOTFILES_DIR/setup_apt.sh"
-else
-    echo "Unsupported OS: $OS"
+if [ "$(uname -s)" != "Darwin" ]; then
+    echo "This script is for macOS only."
+    echo "For Linux, use the devcontainer setup (.devcontainer/)."
     exit 1
 fi
+
+echo "========================================="
+echo " Dotfiles Installation (macOS)"
+echo "========================================="
+
+# 1. Homebrew 및 패키지 설치
+echo ""
+echo "[1/4] Homebrew & packages..."
+bash "$DOTFILES_DIR/setup_brew.sh"
 
 # 2. Zsh & 플러그인 설정
 echo ""
@@ -31,7 +32,7 @@ echo ""
 echo "[3/4] Node.js (nvm)..."
 bash "$DOTFILES_DIR/setup_nvm.sh"
 
-# 4. Symlink 및 설정
+# 4. Symlink 설정
 echo ""
 echo "[4/4] Symlinking dotfiles..."
 
@@ -51,17 +52,6 @@ if command -v delta >/dev/null 2>&1; then
     git config --global delta.side-by-side true
     git config --global merge.conflictstyle zdiff3
     echo "git-delta configured as default pager."
-fi
-
-# ~/.local/bin을 PATH에 추가 (Linux에서 bat, fd symlink 용)
-if [ "$OS" = "Linux" ]; then
-    ZSHRC="$HOME/.zshrc"
-    if ! grep -q 'HOME/.local/bin' "$ZSHRC" 2>/dev/null; then
-        echo '' >> "$ZSHRC"
-        echo '# local binaries' >> "$ZSHRC"
-        echo 'export PATH="$HOME/.local/bin:$PATH"' >> "$ZSHRC"
-        echo "Added ~/.local/bin to PATH in .zshrc."
-    fi
 fi
 
 echo ""
