@@ -1,18 +1,24 @@
 #!/bin/bash
 
-set -e 
+set -e
 
-brew install nvm
+if ! brew list nvm &>/dev/null; then
+    echo "Installing nvm..."
+    brew install nvm
+else
+    echo "nvm is already installed."
+fi
 
 echo "Adding NVM environment variables and initialization script to your shell profile..."
 
+# 현재 실행 셸이 아닌 사용자의 기본 셸 기준으로 판단
 NVM_PROFILE=""
-if [ -n "$ZSH_VERSION" ]; then
+USER_SHELL="$(basename "$SHELL")"
+if [ "$USER_SHELL" = "zsh" ]; then
     NVM_PROFILE="$HOME/.zshrc"
-elif [ -n "$BASH_VERSION" ]; then
+elif [ "$USER_SHELL" = "bash" ]; then
     NVM_PROFILE="$HOME/.bashrc"
 else
-    # Use .profile as default
     NVM_PROFILE="$HOME/.profile"
 fi
 

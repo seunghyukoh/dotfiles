@@ -1,29 +1,33 @@
 tap "runpod/runpodctl"
 tap "tsung-ju/iguanatexmac"
-# Shell extension to jump to frequently used directories
-brew "autojump"
 # Automatically restart SSH sessions and tunnels
 brew "autossh"
-# Python code formatter
-brew "black"
+# Syntax highlighting for cat
+brew "bat"
 # OpenAI's coding agent that runs in your terminal
-brew "codex"
+cask "codex"
 # Get, unpack, build, and install modules from CPAN
 brew "cpanminus"
+# Modern replacement for ls
+brew "eza"
+# Simple, fast, user-friendly alternative to find
+brew "fd"
 # Command-line fuzzy finder written in Go
 brew "fzf"
 # GitHub command-line tool
 brew "gh"
+# Syntax highlighting pager for git and diff output
+brew "git-delta"
 # Distributed revision control system
 brew "git"
 # Git extension for versioning large files
 brew "git-lfs"
 # Kubernetes package manager
 brew "helm"
-# Sort Python imports automatically
-brew "isort"
 # Kubernetes command-line interface
 brew "kubernetes-cli"
+# Simple terminal UI for git commands
+brew "lazygit"
 # Ambitious Vim-fork focused on extensibility and agility
 brew "neovim"
 # Manage multiple Node.js versions
@@ -32,6 +36,8 @@ brew "nvm"
 brew "parallel"
 # Package compiler and linker metadata toolkit
 brew "pkgconf"
+# Search tool like grep, but optimized for code
+brew "ripgrep"
 # Open source continuous file synchronization application
 brew "syncthing", restart_service: :changed
 # Terminal multiplexer
@@ -40,6 +46,8 @@ brew "tmux"
 brew "uv"
 # Executes a program periodically, showing output fullscreen
 brew "watch"
+# Smarter cd command, inspired by z and autojump
+brew "zoxide"
 # UNIX shell (command interpreter)
 brew "zsh"
 # Command-line interface for 1Password
@@ -104,13 +112,10 @@ vscode "mechatroner.rainbow-csv"
 vscode "mhutchie.git-graph"
 vscode "miguelsolorio.fluent-icons"
 vscode "mikestead.dotenv"
-vscode "mikoz.black-py"
 vscode "monokai.theme-monokai-pro-vscode"
 vscode "ms-azuretools.vscode-containers"
 vscode "ms-kubernetes-tools.vscode-kubernetes-tools"
-vscode "ms-python.black-formatter"
 vscode "ms-python.debugpy"
-vscode "ms-python.isort"
 vscode "ms-python.python"
 vscode "ms-python.vscode-pylance"
 vscode "ms-python.vscode-python-envs"
@@ -128,7 +133,6 @@ vscode "ms-vscode.cpptools"
 vscode "ms-vscode.live-server"
 vscode "ms-vscode.remote-explorer"
 vscode "ms-vscode.remote-server"
-vscode "ms-windows-ai-studio.windows-ai-studio"
 vscode "natizyskunk.sftp"
 vscode "necatiarslan.aws-s3-vscode-extension"
 vscode "nickfode.latex-formatter"

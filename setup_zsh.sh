@@ -106,7 +106,34 @@ fi
 # Add plugin using function
 add_plugin_to_zshrc "zsh-syntax-highlighting"
 
-# Add autojump plugin
-add_plugin_to_zshrc "autojump"
+echo "Setting up zoxide..."
+if command -v zoxide >/dev/null 2>&1; then
+    ZSHRC="$HOME/.zshrc"
+    if ! grep -q 'eval "$(zoxide init zsh)"' "$ZSHRC"; then
+        echo '' >> "$ZSHRC"
+        echo '# zoxide (smarter cd)' >> "$ZSHRC"
+        echo 'eval "$(zoxide init zsh)"' >> "$ZSHRC"
+        echo "zoxide initialization added to .zshrc."
+    else
+        echo "zoxide is already configured in .zshrc."
+    fi
+else
+    echo "zoxide is not installed. Run 'brew install zoxide' first."
+fi
+
+echo "Setting up fzf..."
+if command -v fzf >/dev/null 2>&1; then
+    ZSHRC="$HOME/.zshrc"
+    if ! grep -q 'source <(fzf' "$ZSHRC"; then
+        echo '' >> "$ZSHRC"
+        echo '# fzf key bindings and completion' >> "$ZSHRC"
+        echo 'source <(fzf --zsh)' >> "$ZSHRC"
+        echo "fzf initialization added to .zshrc."
+    else
+        echo "fzf is already configured in .zshrc."
+    fi
+else
+    echo "fzf is not installed. Run 'brew install fzf' first."
+fi
 
 echo "Setup complete! Run 'source ~/.zshrc' to apply changes."
