@@ -3,3 +3,6 @@ alias vim=nvim
 alias bb=better-branch
 alias bc=better-commits
 alias sz='source ~/.zshrc'
+
+alias t="tmux new -As"
+

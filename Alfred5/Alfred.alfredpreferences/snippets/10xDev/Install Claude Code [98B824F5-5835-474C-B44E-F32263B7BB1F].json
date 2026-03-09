@@ -1,0 +1,8 @@
+{
+  "alfredsnippet" : {
+    "snippet" : "curl -fsSL https:\/\/claude.ai\/install.sh | bash",
+    "uid" : "98B824F5-5835-474C-B44E-F32263B7BB1F",
+    "name" : "Install Claude Code",
+    "keyword" : "installclaudecode"
+  }
+}

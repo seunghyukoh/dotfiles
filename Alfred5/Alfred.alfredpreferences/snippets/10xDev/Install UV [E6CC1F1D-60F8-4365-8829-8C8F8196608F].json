@@ -1,0 +1,8 @@
+{
+  "alfredsnippet" : {
+    "snippet" : "wget -qO- https:\/\/astral.sh\/uv\/install.sh | sh",
+    "uid" : "E6CC1F1D-60F8-4365-8829-8C8F8196608F",
+    "name" : "Install UV",
+    "keyword" : "installuv"
+  }
+}

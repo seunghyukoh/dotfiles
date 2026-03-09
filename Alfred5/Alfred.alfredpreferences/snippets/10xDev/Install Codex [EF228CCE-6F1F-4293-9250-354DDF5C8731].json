@@ -1,0 +1,8 @@
+{
+  "alfredsnippet" : {
+    "snippet" : "npm i -g @openai\/codex",
+    "uid" : "EF228CCE-6F1F-4293-9250-354DDF5C8731",
+    "name" : "Install Codex",
+    "keyword" : "installcodex"
+  }
+}

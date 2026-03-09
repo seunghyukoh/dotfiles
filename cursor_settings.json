@@ -14,8 +14,8 @@
   "files.autoSave": "onFocusChange",
   "black-formatter.importStrategy": "fromEnvironment",
   "editor.defaultFormatter": "esbenp.prettier-vscode",
-  "notebook.formatOnSave.enabled": true,
-  "notebook.formatOnCellExecution": true,
+  // "notebook.formatOnSave.enabled": true,
+  // "notebook.formatOnCellExecution": true,
   "black-formatter.showNotifications": "onWarning",
   "black-formatter.args": ["--line-length", "100"],
   "python.sortImports.args": ["--profile", "black"],
@@ -45,7 +45,7 @@
   "editor.accessibilitySupport": "off",
   "explorer.confirmDragAndDrop": false,
   "window.commandCenter": false,
-  "terminal.integrated.defaultProfile.linux": "bash",
+  "terminal.integrated.defaultProfile.linux": "zsh",
   "notebook.editorOptionsCustomizations": {
     "editor.tabSize": 4,
     "editor.indentSize": 4,
@@ -117,7 +117,9 @@
     "vs-kubernetes.local-tunnel-debug-provider": "",
     "checkForMinikubeUpgrade": true,
     "imageBuildTool": "Docker",
-    "vs-kubernetes.ignore-recommendations": true
+    "vs-kubernetes.ignore-recommendations": true,
+    "vscode-kubernetes.helm-path-linux": "/home/seunghyukoh/.local/state/vs-kubernetes/tools/helm/linux-amd64/helm",
+    "vscode-kubernetes.minikube-path-linux": "/home/seunghyukoh/.local/state/vs-kubernetes/tools/minikube/linux-amd64/minikube"
   },
   "vscode-kubernetes.log-viewer.follow": true,
   "vscode-kubernetes.log-viewer.timestamp": true,
@@ -129,7 +131,11 @@
   "remote.SSH.remotePlatform": {
     "slurm": "linux",
     "runpod": "linux",
-    "runpod-sftp": "linux"
+    "runpod-sftp": "linux",
+    "office": "linux",
+    "h100": "linux",
+    "a100": "linux",
+    "workstation": "linux"
   },
   "github.copilot.nextEditSuggestions.enabled": true,
   "window.newWindowProfile": "Default",
@@ -163,5 +169,28 @@
     ".github/instructions": true,
     "/Users/seunghyukoh/.aitk/instructions/": true
   },
-  "sync.gist": "6fed643793d99f3b256feba12325a688"
+  "sync.gist": "6fed643793d99f3b256feba12325a688",
+  "githubPullRequests.pullBranch": "never",
+  "claudeCode.preferredLocation": "sidebar",
+  "aws.cloudformation.telemetry.enabled": false,
+  "cursor.composer.shouldChimeAfterChatFinishes": true,
+  "cursorpyright.shouldImportPylanceSettings": "never",
+  "lldb.suppressUpdateNotifications": true,
+  "jupyter.askForKernelRestart": false,
+  "remote.autoForwardPortsSource": "hybrid",
+  "claudeCode.useTerminal": true,
+  "explorer.fileNesting.patterns": {
+    "*.ts": "${capture}.js",
+    "*.js": "${capture}.js.map, ${capture}.min.js, ${capture}.d.ts",
+    "*.jsx": "${capture}.js",
+    "*.tsx": "${capture}.ts",
+    "tsconfig.json": "tsconfig.*.json",
+    "package.json": "package-lock.json, yarn.lock, pnpm-lock.yaml, bun.lockb, bun.lock",
+    "*.sqlite": "${capture}.${extname}-*",
+    "*.db": "${capture}.${extname}-*",
+    "*.sqlite3": "${capture}.${extname}-*",
+    "*.db3": "${capture}.${extname}-*",
+    "*.sdb": "${capture}.${extname}-*",
+    "*.s3db": "${capture}.${extname}-*"
+  }
 }
