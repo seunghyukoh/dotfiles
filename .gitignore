@@ -1,6 +1,3 @@
-# setup_brew.sh에서 packages.sh 기반으로 자동 생성
-Brewfile
-
 # Local editor settings export
 cursor_settings.json
 
