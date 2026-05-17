@@ -1,6 +1,23 @@
 # setup_brew.sh에서 packages.sh 기반으로 자동 생성
 Brewfile
 
+# Local editor settings export
+cursor_settings.json
+
+# Alfred is managed by the app; keep the live preference tree out of git.
+Alfred5/
+
+# Retired local files kept out of the dotfiles repo.
+.devcontainer/
+.vscode/
+README.md
+install.sh
+iterm2_default_profile.json
+packages.sh
+setup_brew.sh
+setup_nvm.sh
+setup_zsh.sh
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[codz]
@@ -219,3 +236,6 @@ __marimo__/
 .streamlit/secrets.toml
 
 .DS_Store
+
+.omx
+.omc
