@@ -13,7 +13,7 @@
 - **멱등성**: `git config --global`은 같은 키를 덮어쓰므로 반복 실행해도 안전하다.
 - **개인 값 주의**: 사용자 이름/이메일/서명키는 **본인 환경 값**으로 채운다(아래 1-2).
 - **검증 필수**: 마지막에 설정값을 다시 읽어 확인한다.
-- **환경 전제**: macOS + Homebrew.
+- **환경 전제**: macOS 또는 Linux(Homebrew).
 
 ---
 
@@ -48,8 +48,13 @@ git config --global init.defaultBranch main
 
 ```bash
 git config --global gpg.format ssh
-git config --global gpg.ssh.program "/Applications/1Password.app/Contents/MacOS/op-ssh-sign"
 git config --global commit.gpgsign true
+# op-ssh-sign 경로는 OS별로 다르다 (1Password 데스크톱 앱 기준)
+if [ "$(uname -s)" = "Darwin" ]; then
+  git config --global gpg.ssh.program "/Applications/1Password.app/Contents/MacOS/op-ssh-sign"
+else
+  git config --global gpg.ssh.program "/opt/1Password/op-ssh-sign"
+fi
 # 서명에 쓸 공개키 (본인 키로 교체)
 git config --global user.signingkey "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIPTCfJ+OMZtgnidWkTNKhGxRMMgXat5Wn/JEXtuF9nEV"
 ```

@@ -7,7 +7,7 @@ Alfred5/
 # Retired local files kept out of the dotfiles repo.
 .devcontainer/
 .vscode/
-README.md
+/README.md
 install.sh
 iterm2_default_profile.json
 packages.sh

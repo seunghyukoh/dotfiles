@@ -14,7 +14,8 @@ zoxide/fzf 통합, alias)을 재현하기 위한 실행 가이드입니다.
 - **멱등성**: 각 단계는 적용 여부를 먼저 확인하고, 됐으면 건너뛴다.
 - **백업 우선**: `~/.zshrc` 수정 전 중복 여부를 `grep`으로 확인한다.
 - **검증 필수**: 마지막에 `zsh -n`/`zsh -ic`로 문법과 로드를 확인한다.
-- **환경 전제**: macOS + Homebrew, dotfiles는 `~/Developer/dotfiles`에 클론돼 있다.
+- **환경 전제**: macOS 또는 Linux(Homebrew), dotfiles는 `~/Developer/dotfiles`에 클론돼 있다.
+  (oh-my-zsh·플러그인·brew 도구는 두 OS에서 동일하게 동작한다.)
 
 ---
 

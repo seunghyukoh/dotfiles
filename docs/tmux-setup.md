@@ -15,7 +15,8 @@
 
 - **멱등성**: 심링크는 `ln -sfv`로 항상 같은 결과를 보장한다(이미 있어도 안전).
 - **검증 필수**: 마지막에 별도 소켓(`-L`)으로 설정을 로드해 에러가 없는지 확인한다.
-- **환경 전제**: macOS + Homebrew, dotfiles는 `~/Developer/dotfiles`에 클론돼 있다.
+- **환경 전제**: macOS 또는 Linux(Homebrew), dotfiles는 `~/Developer/dotfiles`에 클론돼 있다.
+  (클립보드는 `tmux.conf`가 `uname`으로 macOS=pbcopy / Linux=xclip을 자동 분기한다.)
 
 ---
 

@@ -16,8 +16,8 @@
 - **백업 우선**: 기존 파일(`~/.zshrc` 등)을 수정하기 전에 내용을 확인하고, 같은 줄을
   중복 추가하지 않는다(`grep` 가드 사용).
 - **검증 필수**: 각 섹션 끝의 "검증" 명령을 실행해 결과를 확인한 뒤 다음으로 넘어간다.
-- **환경 전제**: macOS + Homebrew(`/opt/homebrew`), 셸은 zsh. 설정은 XDG 기본
-  경로 `~/.config/yazi/` 를 사용한다.
+- **환경 전제**: macOS 또는 Linux(Homebrew on Linux), 셸은 zsh. 설정은 XDG 기본
+  경로 `~/.config/yazi/` 를 사용한다. brew 명령은 두 OS에서 동일하다.
 
 ---
 
