@@ -1,0 +1,75 @@
+# Ghostty 설정 파일
+# 위치: ~/.config/ghostty/config
+# 문법: `키 = 값` 형태, 한 줄에 하나씩. 적용은 Cmd+Shift+, (Reload Config) 또는 재실행.
+# 전체 옵션 목록: `ghostty +show-config --default --docs` 또는 https://ghostty.org/docs/config
+# 테마 둘러보기: `ghostty +list-themes`   /   폰트 목록: `ghostty +list-fonts`
+
+# ───────────────────────────── 폰트 ─────────────────────────────
+# Nerd Font 글리프 포함 → eza 아이콘 · nvim · powerline 기호가 깨지지 않음
+font-family = "MesloLGM Nerd Font Mono"
+# 한글 폴백 폰트: 위 폰트에 없는 한글 글리프는 D2Coding으로 렌더링
+# (여러 font-family 줄 = 첫 줄이 기본, 이후는 폴백 순서)
+# D2Coding = 영문 대비 2:1 고정폭 한글 코딩 폰트
+font-family = "D2Coding"
+font-size = 14
+# 줄 간격을 살짝 넓혀 가독성 향상 (1.0 = 기본, 0.1 = 10% 추가)
+adjust-cell-height = 10%
+# 합자(ligature) 비활성화하려면 아래 주석 해제
+# font-feature = -calt, -liga, -dlig
+
+# ───────────────────────────── 테마 ─────────────────────────────
+# Monokai Pro 계열의 라이트 변종(Sun = 따뜻한 베이지 톤 배경, 부드러운 강조색)
+theme = Monokai Pro Light Sun
+# 다른 변종으로 바꾸려면 위 줄 값만 교체 (`ghostty +list-themes`로 미리보기):
+#   Monokai Pro Spectrum  → 대비 최강, 색이 가장 강렬 (#222222)
+#   Monokai Pro Machine   → 청록빛 배경
+#   Monokai Pro Octagon   → 남색빛 배경
+#   Monokai Pro Ristretto → 적갈색, 저대비로 눈 편함
+# macOS 라이트/다크 모드에 따라 자동 전환하고 싶으면 위 theme 줄을 아래로 교체:
+#   theme = light:Monokai Pro Light Sun,dark:Monokai Pro
+
+# ──────────────────────────── 윈도우 ────────────────────────────
+# 내용과 창 가장자리 사이 여백 (편집기처럼 숨통 트이게)
+window-padding-x = 12
+window-padding-y = 12
+# 분할/탭 추가 시에도 여백을 균형 있게 유지
+window-padding-balance = true
+# 종료 후 재실행 시 이전 창/탭 상태 복원
+window-save-state = always
+# 네이티브 macOS 탭 UI 사용
+macos-titlebar-style = tabs
+
+# ──────────────────────────── 커서 ─────────────────────────────
+cursor-style = block
+cursor-style-blink = false
+# 타이핑 중 마우스 포인터 숨김
+mouse-hide-while-typing = true
+
+# ───────────────────────────── 키 ──────────────────────────────
+# macOS에서 Option 키를 Alt로 인식 → tmux/zsh/nvim의 Alt 단축키 정상 동작
+# (한글/특수문자 입력에 Option을 쓴다면 이 줄을 지우세요)
+macos-option-as-alt = true
+
+# ─────────────────────────── 클립보드 ───────────────────────────
+# 선택만 해도 클립보드에 복사 (드래그 후 Cmd+C 불필요)
+copy-on-select = clipboard
+
+# ─────────────────────────── 셸 통합 ────────────────────────────
+# zsh 자동 감지 + 기능 활성화 (현재 디렉터리 추적, 점프, 커서 모양 등)
+shell-integration = detect
+shell-integration-features = cursor,sudo,title
+
+# ──────────────────────── 추가 키바인딩 ──────────────────────────
+# 어디서나 Cmd+Ctrl+Space 로 떠 있는 quick terminal 토글
+keybind = global:cmd+ctrl+space=toggle_quick_terminal
+
+# ─────────────────────── 선택적(취향) 옵션 ───────────────────────
+# 반투명 + 블러 배경 (값이 작을수록 더 투명. 라이트 테마라 가독성 위해 0.92로 다소 높게,
+# 더 투명하게 원하면 0.85~0.9, 끄려면 1.0)
+background-opacity = 0.92
+# 배경 블러 반경(px). macOS 전용. 0이면 끔
+background-blur = 20
+
+# 창 시작 크기 (열 x 행)
+window-width = 120
+window-height = 36
